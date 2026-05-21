@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
+  min-height: 100vh;
+}
+:root {
+  --color-bg: #2a3847;
+  --color-surface: rgba(26, 25, 25, 0.80);
+  --color-primary: #a3a6ff;
+  --color-text: #ffffff;
+  --color-text-muted: #adaaaa;
+
+  --nav-height: 64px;
+  --nav-padding: 2rem;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+.site-header {
+  height: var(--nav-height);
+  background: var(--color-surface);
+  padding: 32px;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 var(--nav-padding);
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--color-text);
+}
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.btn-entrar {
+  text-decoration: none;
+  color: var(--color-primary);
+  border: 1px solid #484847;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.btn-search {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+
+    .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        height: auto;
+    }
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+  
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #1f2937;
+        border-radius: 8px;
+    }
+
+    .nav-actions {
+        width: 100%;
+    }
+
+    .btn-entrar {
+        width: 100%;
+        text-align: center;
+    }
+}
