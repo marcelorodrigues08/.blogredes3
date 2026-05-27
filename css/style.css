@@ -89,7 +89,7 @@ body {
 }
 
 .btn-hamburger {
- /* display: none; */
+ display: none; 
  background: none;
  border: none;
  color: var(--color-text);
@@ -107,6 +107,15 @@ body {
     align-items: flex-start;
     padding: 1rem;
     gap: 1rem;
+    position: relative;
+  }
+
+  /*Mandar o button hamburger para o canto superior direito*/
+  .btn-hamburger{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
   }
 
   .nav-links, .nav-actions{
