@@ -33,8 +33,22 @@
         <span class="material-symbols-outlined">search</span>
       </button>
     </div>
+
+    <!--Menu Hamburger-->
+    <button class="btn-hamburger">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </nav>
 </header>
 
+    <!--Código Jarva Script agora / para poder ter a interação do externo(pessoa) com o site/buttons-->
+  <script>
+    let menu = document.querySelector(".btn-hamburger");
+    let nav = document.querySelector(".nav-inner");
+
+    menu.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    })
+  </script>
 </body>
 </html>
