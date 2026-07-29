@@ -1,0 +1,53 @@
+.hero-section {
+  padding: 5rem 3rem 4rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.hero-titulo-wrapper {
+  flex: 1;
+}
+
+.hero-titulo {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--color-text);
+}
+
+.hero-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-valor {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.stat-descricao {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
